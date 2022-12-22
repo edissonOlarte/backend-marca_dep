@@ -1,41 +1,55 @@
 ###
-GET http://localhost:9000/api/eventos/5 HTTP/1.1
+GET http://localhost:9000/api/Equipos HTTP/1.1
+
+###
+POST http://localhost:9000/api/libros HTTP/1.1
+Content-Type: application/json
+
+{
+    "lib_nombre":"La Dama de las Camelias",
+    "lib_autor":"Alejandro Dumas",
+    "lib_editorial": "Planeta"
+}
+
+###
+DELETE http://localhost:9000/api/libros/lib_id/6 HTTP/1.1
+ 
+###
+PUT http://localhost:9000/api/4 HTTP/1.1
+Content-Type: application/json
+ 
+{
+    "lib_nombre":"Quien se ha llevado mi Queso 1",
+    "lib_autor":"Spenser Johnson 1",
+    "lib_editorial": "Planeta 1"
+}
+
+
+###
+GET http://localhost:9000/api/usuarios HTTP/1.1
 
 ###
 POST http://localhost:9000/api/usuarios HTTP/1.1
 Content-Type: application/json
 
-
-#     "lib_nombre":"EL PRINCIPITO2",
-#     "lib_autor":"Petit Price2",
-#     "lib_editorial":"Planeta2"
-
-
 {
-    "usu_email":"oneiber@gmail.com",
-    "usu_clave":"123456",
-    "usu_nombres":"oneiber",
-    "usu_apellidos":"ospina"
+   
+    "usu_email":"juan@gmail.co",
+    "usu_clave": "12346",
+    "usu_nombres": "Juan Carlos",
+    "usu_apellidos": "Duarte"
 }
 
 ###
-DELETE http://localhost:9000/api/usuarios/usu_id/1 HTTP/1.1
-
-
+DELETE http://localhost:9000/api/usuarios/usu_id/2 HTTP/1.1
+ 
 ###
-PUT http://localhost:9000/api/usuarios/usu_id/1 HTTP/1.1
+PUT http://localhost:9000/api/usuarios/usu_id/2 HTTP/1.1
 Content-Type: application/json
+ 
 
-# {
-#     "lib_nombre":"oneiber",
-#     "lib_autor":"Petit Price",
-#     "lib_editorial":"Planeta"
-# }
-
-
-{
-    "usu_email":"oneiber@gmail.com3",
-    "usu_clave":"1234563",
-    "usu_nombres":"oneiber3",
-    "usu_apellidos":"ospina3"
-}
+   
+    "usu_email":"juan@gmail.co",
+    "usu_clave": "12345",
+    "usu_nombres": "Juan Angel",
+ 
